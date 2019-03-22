@@ -25,6 +25,3 @@ type: page
 
 * [Thinking in React](http://facebook.github.io/react/docs/thinking-in-react.html)
 
-## Comments
-
-{% include comments.html %}
