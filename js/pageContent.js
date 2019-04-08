@@ -11,7 +11,9 @@
         var sidebarWrap = document.querySelector('.right>.wrap')
 
         //fix 之后百分比宽度会失效，这里用js赋予宽度
-        sidebarWrap.style.width = sidebarWrap.offsetWidth + "px"
+		if (sidebarWrap) {
+			sidebarWrap.style.width = sidebarWrap.offsetWidth + "px";
+		}
         window.onscroll = function() {
 
             // 页面顶部滚进去的距离
@@ -45,8 +47,10 @@
 function setContentMaxHeightInPC() {
     var windowHeight = window.innerHeight
     var contentUl = document.querySelector('.content-ul')
-    var contentMaxHeight = windowHeight - 77 - 60
-    contentUl.style.maxHeight = contentMaxHeight + 'px'
+	if (contentUl) {
+    	var contentMaxHeight = windowHeight - 77 - 60
+    	contentUl.style.maxHeight = contentMaxHeight + 'px'
+	}
 }
 
 /**

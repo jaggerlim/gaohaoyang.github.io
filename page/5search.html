@@ -1,0 +1,68 @@
+---
+layout: default
+title: Search
+permalink: /search
+icon: search
+type: page
+---
+
+<div>
+    <div>
+        <h1>{{page.title}}</h1>
+        <hr>
+		<!--
+		<div class="form-group">
+        	<input class="subscribe-email" onkeyup="myFunc()" 
+               id="searchtext" type="text" name="searchtext"  
+               placeholder="Search..." style="height:30px;width:300px"/>
+    	</div>
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<ul class="mylist" id="search-results"></ul>
+
+		<script>
+			$("#searchtext").focus();
+			window.store = {
+			{% for post in site.posts %}
+			"{{ post.url | slugify }}": {
+				"title": "{{ post.title | xml_escape }}",
+					"author": "{{ post.author | xml_escape }}",
+					"category": "{{ post.category | xml_escape }}",
+					"content": {{ post.content | strip_html | strip_newlines | jsonify }},
+				"url": "{{ post.url | xml_escape }}"
+			}
+			{% unless forloop.last %},{% endunless %}
+			{% endfor %}
+			};
+		</script>
+
+    	<script type="text/javascript">
+        	function myFunc() {
+            	if(event.keyCode == 13) {
+                	var url = encodeURIComponent($("#searchtext").val());
+                	location.href = "/search/query=" + url;
+            	}
+        	}
+    	</script>
+		
+			<style type="text/css">
+				.cse .gsc-control-cse, .gsc-control-cse {padding:0px;}
+				input.gsc-input, .gsc-input-box {border-color: #ffffff;} 
+			</style>
+-->
+			<script>
+				(function() {
+					var cx = '008464937966047609953:tixffrzfjac';
+					var gcse = document.createElement('script');
+					gcse.type = 'text/javascript';
+					gcse.async = true;
+					gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+					var s = document.getElementsByTagName('script')[0];
+					s.parentNode.insertBefore(gcse, s);
+				})();
+			</script>
+			<gcse:search></gcse:search>
+    </div>
+</div>
+<!--<script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
+<script src="/js/search.js"></script>-->
