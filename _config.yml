@@ -6,10 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Jagger's Blog
+title: James's Blog
 brief-intro: about software engineering
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jaggerlim.github.io" # the base hostname & protocol for your site
+url: "https://james-lim.github.io" # the base hostname & protocol for your site
 author: Jaewon Lim
 
 permalink: /:year/:month/:day/:title/
@@ -17,7 +17,7 @@ permalink: /:year/:month/:day/:title/
 # other links
 twitter_username: 
 facebook_username: 
-github_username: jaggerlim
+github_username: james-lim
 email: greatim@gmail.com
 weibo_username: 
 zhihu_username: 
